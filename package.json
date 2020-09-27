@@ -1,17 +1,41 @@
 {
-  "name": "gulp-build-demo-temp",
+  "name": "csf-gulp-build",
   "version": "1.0.0",
   "description": "[![NPM Downloads][downloads-image]][downloads-url] [![NPM Version][version-image]][version-url] [![License][license-image]][license-url] [![Dependency Status][dependency-image]][dependency-url] [![devDependency Status][devdependency-image]][devdependency-url] [![Code Style][style-image]][style-url]",
-  "main": "index.js",
-  "bin": {
-    "gulp-build-demo-temp": "index.js"
-  },
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "bin": "bin/csf-gulp-build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-less": "^4.0.1",
+    "gulp-load-plugins": "^2.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-swig": "^0.9.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.1",
+    "less-plugin-autoprefix": "^2.0.0"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-imagemin": "^7.1.0"
+  }
 }
